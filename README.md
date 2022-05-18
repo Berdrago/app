@@ -42,10 +42,20 @@ npm install bootstrap
 ````
 ````
 --------Crear Componentes----------
-npx ng g c components/navbar
-npx ng g c components/agregareditar
-npx ng g c components/list
-npx ng g c components/ver
+npx ionic ng g c components/navbar
+
+
+````
+````
+--------Crear Page-------
+npx ionic g page iniciomovil  
+npx ionic g p /page/bibloteca
+
+
+````
+````
+--------Crear Module-------
+npx ionic g m backend
 
 ````
 ````
