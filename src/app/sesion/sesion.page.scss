@@ -1,0 +1,31 @@
+.encabezado{
+    background-color: #ff0018 ;
+    border-radius: 30px;
+    margin: 20px;
+    text-align: center ;
+    padding: 10px;
+}
+.img{
+    display: block;
+    margin: 0px auto;
+   }
+.bcentrado {
+    width: 300px; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.text{
+    width: 300px; 
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 10px;
+    border-top: 1px solid #C00;
+    border-right: 1px solid #C00;
+    border-bottom: 1px solid #C00;
+    border-left: 1px solid #C00;
+}
+.toggle{
+    margin-left: 50%;
+    transform: translateX(-265%);
+}
+  

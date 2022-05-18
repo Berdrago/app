@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>Areas Recreativas</ion-card-subtitle>
+    <ion-card-title>Reserva de:</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <ion-button [routerLink]="['/sala']" color="danger" expand="full" shape="round" slot="start"> Sala</ion-button>
+
+    <ion-button [routerLink]="['/pingpong']" color="primary" expand="full" shape="round" slot="end"> PingPong</ion-button>
+
+    <ion-button [routerLink]="['/futbol']" color="warning" expand="full" shape="round" slot="start"> Futbol</ion-button>
+
+    <ion-button [routerLink]="['/biblioteca']" color="secondary" expand="full" shape="round" slot="end"> Biblioteca</ion-button>
+
+  </ion-card-content>
+</ion-card>
+</ion-content>

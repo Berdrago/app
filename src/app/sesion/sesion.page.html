@@ -1,0 +1,46 @@
+<ion-menu  ></ion-menu>
+<ion-header>
+  <ion-toolbar >
+    <ion-back-button slot="start" defaultHref="/" color="danger" >
+      <ion-icon name="arrow-back-circle-outline" color="danger" > </ion-icon> 
+    </ion-back-button>
+    <ion-title >
+      <img src="../../assets/icon/Logo.png"  style="width: 200px;" class="img"   alt="">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form action="">
+    <br>
+    <br>
+    <ion-item  class="text">
+      <ion-label class="normal" id="Nombre" >
+      </ion-label>
+      <ion-icon  slot="end" name="mail-outline" color="danger"></ion-icon>
+      <ion-input class="normal2 " type="email" placeholder="Ingresar Email " inputmode="text" >
+      </ion-input>
+    </ion-item>
+    <br>
+     <ion-item  class="text">
+      <ion-label class="normal" id="Nombre" >
+      </ion-label>
+      <ion-icon  slot="end" name="keypad-outline" color="danger"></ion-icon>
+      <ion-input class="normal2 " type="password" placeholder="Ingresar Contraseña" inputmode="text" >
+      </ion-input>
+    </ion-item>
+    <br>
+    <ion-button expand="medium" class="bcentrado" color="danger" type="submit"   > 
+      Iniciar Sesion 
+    </ion-button>
+    <ion-button expand="medium" class="bcentrado" color="danger" type="reset"   > 
+      Limpiar
+    </ion-button>
+    <br>
+  </form>
+  <ion-toggle color="danger" class="toggle"  ></ion-toggle>
+  <h4 style="text-align: center; color: red;"  type="button" [routerLink]='["/recuperar"]' > ¿Olvidaste Tu Contraseña? </h4>
+  <br> 
+  <img src="../../assets/icon/Acreditado.jpg"  style="width: 200px;" class="img"   alt="">
+
+</ion-content>

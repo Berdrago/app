@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="">
+    <ion-title class="subtitulo">
+      Configuracion de Productos 
+    </ion-title>
+    <ion-buttons  (click)="openMenu()" slot="start">
+      <ion-icon class="" color="danger" slot="icon-only" name="menu-sharp" >
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <h3 class="subtitulo encabezado">Crear Usuario  </h3>
+  <form action="">
+    <ion-item >
+      <ion-label class="normal" id="Nombre" >
+        Nombre de Usuario: 
+      </ion-label>
+      <ion-icon  slot="end" name="hand-right-outline" color="danger"></ion-icon>
+      <ion-input class="normal2 " type="string" placeholder="Ingresa Nombre Completo " inputmode="text" >
+      </ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label class="normal" id="Nombre" >
+        Email de Usuario: 
+      </ion-label>
+      <ion-icon  slot="end" name="mail-outline" color="danger"></ion-icon>
+      <ion-input class="normal2 " type="Email" placeholder="Ingresa Nombre Completo " inputmode="text" >
+      </ion-input>
+    </ion-item>
+    <ion-item >
+      <ion-label class="normal" id="Nombre" >
+        Contrseña de usuario : 
+      </ion-label>
+      <ion-icon  slot="end" name="hand-right-outline" color="danger"></ion-icon>
+      <ion-input class="normal2 " type="Password" placeholder="Ingresa Nombre Completo " inputmode="text" >
+      </ion-input>
+    </ion-item>
+    
+    <ion-button style="margin: 30px;" expand="full " color="success" type="submit" > Crear Usuario  </ion-button>
+    <ion-button style="margin: 30px;" expand="full " color="primary" type="reset" > limpiar  </ion-button>
+  </form>
+</ion-content>

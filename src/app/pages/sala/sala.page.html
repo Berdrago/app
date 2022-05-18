@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button color="danger" text="Regresar" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="danger">Salas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Areas Recreativas</ion-card-subtitle>
+      <ion-card-title color="danger">Salas:</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label position="floating">Cantidad acompañantes</ion-label>
+        <ion-input type="number" value="0" min="0" max="10" [(ngModel)]="data.acomps"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Numero de sala solicitada</ion-label>
+          <ion-input type="text" [(ngModel)]="data.numsala"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Motivo de solicitud</ion-label>
+          <ion-input type="text" [(ngModel)]="data.motivo"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Tiempo destinado</ion-label>
+      <ion-select placeholder="Seleccione cantidad" [(ngModel)]="data.cantidad">
+        <ion-select-option *ngFor="let niv of niveles" [value]="niv.id">{{niv.nivel}}</ion-select-option>
+      </ion-select>
+      </ion-item>
+      
+      <ion-button shape="block"
+                  color="danger"
+                  (click)="mostrar()">
+        Confirmar
+      </ion-button>
+      
+      <ion-button shape="block"
+                  color="primary"
+                  (click)="limpiar()">
+        Limpiar
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+  </ion-content>
