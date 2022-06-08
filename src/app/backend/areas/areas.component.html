@@ -9,50 +9,47 @@
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-<ion-content >
-  <h3 class="subtitulo encabezado">Crear Area Recreativas  </h3>
-  <form action="">
-    <ion-item >
-      <ion-label class="normal" id="Nombre" >
-        Nombre: 
-      </ion-label>
-      <ion-icon  slot="end" name="hand-right-outline" color="danger"></ion-icon>
-      <ion-input class="normal2 " type="string" placeholder="Ingresa Nombre Completo " inputmode="text" >
-      </ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label class="normal">
-        Fecha de creacion de Area Recreativa
-      </ion-label>
-      <ion-input class="normal2  p-2 " type="date"  >
-      </ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label class="normal">
-        Hora de Creacion:
-      </ion-label>
-      <ion-input class="normal2  p-2 " type="time"  >
-      </ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label class="normal">
-        Imagen:
-      </ion-label>
-      <ion-input class="normal2  p-2 " type="file"  >
-      </ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label class="normal">
-        Categoria:
-      </ion-label>
-      <select  class="form-select">
-        <option selected>Tipo de areas Recreativas</option>
-        <option>Ping pong </option>
-        <option>Cancha</option>
-        <option>Sala</option>
-      </select>
-    </ion-item>
-    <ion-button style="margin: 30px;" expand="full " color="success" > Crear Area Recreativa  </ion-button>
-    <ion-button style="margin: 30px;" expand="full " color="primary" type="reset" > limpiar  </ion-button>
-  </form>
-</ion-content>
+<h3 class="subtitulo encabezado">Crear Area Recreativas  </h3>
+<ion-item >
+  <ion-label class="normal" id="Nombre" >
+    Nombre: 
+  </ion-label>
+  <ion-icon  slot="end" name="hand-right-outline" color="danger"></ion-icon>
+  <ion-input [(ngModel)]="newProducto.nombre" class="normal2 " type="string" placeholder="Ingresa Nombre Completo "  inputmode="text" > </ion-input>
+</ion-item>
+<ion-item >
+  <ion-label class="normal">
+    Fecha de creacion de Area Recreativa
+  </ion-label>
+  <ion-input  [(ngModel)]="newProducto.fecha" class="normal2  p-2 " type="date"  >
+  </ion-input>
+</ion-item>
+<ion-item >
+  <ion-label class="normal">
+    Hora de Creacion:
+  </ion-label>
+  <ion-input class="normal2  p-2 " [(ngModel)]="newProducto.hora"  type="time"  >
+  </ion-input>
+</ion-item>
+<ion-item >
+  <ion-label class="normal">
+    Imagen:
+  </ion-label>
+  <ion-input class="normal2  p-2 " [(ngModel)]="newProducto.imagen"  type="file"  >
+  </ion-input>
+</ion-item>
+<ion-item >
+  <ion-label class="normal">
+    Categoria:
+  </ion-label>
+  <select  class="form-select" [(ngModel)]="newProducto.categoria" >
+    <option selected>Tipo de areas Recreativas</option>
+    <option>Ping pong </option>
+    <option>Cancha</option>
+    <option>Sala</option>
+  </select>
+</ion-item>
+<ion-button style="margin: 30px;" expand="full " color="success"  (click)="guardarProducto()" > Crear Area Recreativa  </ion-button>
+<ion-button style="margin: 30px;" expand="full " color="primary" type="reset" > limpiar  </ion-button>
+
+

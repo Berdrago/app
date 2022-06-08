@@ -3,12 +3,12 @@
     display: block;
     margin: 0px auto;
    }
-.bcentrado {
+.bcentrado  {
     width: 300px; 
     margin-left: 50%;
     transform: translateX(-50%);
 }
-.text{
+.text {
     width: 300px; 
     margin-left: 50%;
     transform: translateX(-50%);
@@ -22,4 +22,6 @@
     margin-left: 50%;
     transform: translateX(-265%);
 }
-  
+.sc-ion-input-md-s{
+    color: red;
+}

@@ -3,13 +3,12 @@ import { MenuController } from '@ionic/angular';
 import { Producto } from 'src/app/models';
 import { FirestoreService } from 'src/app/services/firestore.service';
 
-
 @Component({
-  selector: 'app-areas',
-  templateUrl: './areas.component.html',
-  styleUrls: ['./areas.component.scss'],
+  selector: 'app-listarareas',
+  templateUrl: './listarareas.component.html',
+  styleUrls: ['./listarareas.component.scss'],
 })
-export class AreasComponent implements OnInit {
+export class ListarareasComponent implements OnInit {
 
   productos: Producto[] = [];
   newProducto: Producto = {
@@ -53,3 +52,4 @@ export class AreasComponent implements OnInit {
   }
 
 }
+

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AreasComponent } from './backend/areas/areas.component';
+import { ListarareasComponent } from './backend/listarareas/listarareas.component';
 import { UsersComponent } from './backend/users/users.component';
 
 const routes: Routes = [
@@ -55,6 +56,11 @@ const routes: Routes = [
   },
   { path: 'areas', component:AreasComponent },
   { path: 'users', component:UsersComponent },
+  { path: 'listarareas', component:ListarareasComponent },
+  {
+    path: 'slide',
+    loadChildren: () => import('./slide/slide.module').then( m => m.SlidePageModule)
+  },
 
 ];
 

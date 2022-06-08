@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar class="">
+    <ion-title class="subtitulo">
+      Lista de Areas Recreativas
+    </ion-title>
+    <ion-buttons  (click)="openMenu()" slot="start">
+      <ion-icon class="" color="danger" slot="icon-only" name="menu-sharp" >
+      </ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-item *ngFor="let producto of productos "> 
+  <ion-label> 
+    {{producto.nombre}}
+  </ion-label>
+  <ion-button color="danger" slot="end" (click)="deleteProducto(producto)">
+    <ion-icon slot="icon-only" name="trash-outline"></ion-icon> 
+  </ion-button>
+  <ion-button color="success" slot="end"  >
+    <ion-icon name="create-outline"></ion-icon>
+  </ion-button>
+</ion-item> 

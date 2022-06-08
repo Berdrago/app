@@ -1,6 +1,5 @@
 <ion-header>
   <ion-toolbar>
-
     <ion-buttons slot="start">
       <ion-back-button color="warning" text="Regresar" ></ion-back-button>
     </ion-buttons>
@@ -27,8 +26,15 @@
 
       <ion-item>
         <ion-label position="floating">Pelota</ion-label>
-        <ion-input type="number" value="0" min="0" max="1" [(ngModel)]="data.pelota"></ion-input>
+        <ion-input type="number" value="0" min="0" max="1" ></ion-input>
         
+      </ion-item>
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="f">Female</ion-select-option>
+          <ion-select-option value="m">Male</ion-select-option>
+        </ion-select>
       </ion-item>
       
       <ion-button shape="block"
